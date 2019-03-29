@@ -7,7 +7,11 @@ const palette = {
     primary: {main: '#212121'},
     secondary: {main: '#AD1457'},
     background: {
-        default: "#0000"
+        default: "#212121"
+    },
+
+    typography: {
+        useNextVariants: true
     }
 };
 

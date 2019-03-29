@@ -1,23 +1,22 @@
 import React, {Component, Fragment} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import withRoot from "./theme";
-import {Typography} from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import NameCard from "./components/namecard";
 
+const style = ({
+
+})
 
 
 class App extends Component {
   render() {
+      console.log(this.props);
       return (
-          <MuiThemeProvider theme={""}>
               <Fragment>
-                  <Grid>
-
-                  </Grid>
+                     <NameCard theme={this.props.theme} />
               </Fragment>
-          </MuiThemeProvider>
       );
   }
 }
