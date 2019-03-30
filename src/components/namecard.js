@@ -11,9 +11,13 @@ const style = makeStyles({
     card: {
         width: '1000px',
         height: '650px',
-        margin: '10px auto',
         borderRadius: 0,
-        position: 'relative '
+        position: 'absolute',
+        left: '0',
+        right: '0',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        zIndex: '20'
     },
     headshot: {
         width: 700,
@@ -38,7 +42,7 @@ const style = makeStyles({
 
     social: {
         display: 'flex',
-        background: '#AD1457',
+        background: '#212121',
         position: 'absolute',
         height: 50,
         bottom: 0,
@@ -71,7 +75,7 @@ export default function NameCard(props) {
                         <hr/>
                     </Grid>
                     <Grid className={classes.profileDetails} style={{width: '89%'}} item container>
-                        <Grid container xs={12}>
+                        <Grid container item xs={12}>
                             <Grid item xs={2}>
                                 <Typography className={classes.customTypoSize}>
                                     <b>AGE</b>
@@ -82,7 +86,7 @@ export default function NameCard(props) {
                             </Grid>
                             <Grid/>
                         </Grid>
-                        <Grid container xs={12}>
+                        <Grid container item xs={12}>
                             <Grid item xs={2}>
                                 <Typography className={classes.customTypoSize}>
                                     <b>ID</b>
@@ -92,7 +96,7 @@ export default function NameCard(props) {
                                 <Typography className={classes.customTypoSize}>3788996</Typography>
                             </Grid>
                         </Grid>
-                        <Grid container xs={12}>
+                        <Grid container item xs={12}>
                             <Grid item xs={2}>
                                 <Typography className={classes.customTypoSize}>
                                     <b>E-MAIL</b>
@@ -102,7 +106,7 @@ export default function NameCard(props) {
                                 <Typography className={classes.customTypoSize}>s3788996@student.rmit.edu.au</Typography>
                             </Grid>
                         </Grid>
-                        <Grid container xs={12} spacing={16}>
+                        <Grid container item xs={12} spacing={16}>
                             <Grid item xs={2}>
                                 <Typography className={classes.customTypoSize}>
                                     <b>NATIONALITY</b>
@@ -112,7 +116,7 @@ export default function NameCard(props) {
                                 <Typography className={classes.customTypoSize}>Liberian</Typography>
                             </Grid>
                         </Grid>
-                        <Grid container xs={12} spacing={16}>
+                        <Grid container item xs={12} spacing={16}>
                             <Grid item xs={2}>
                                 <Typography className={classes.customTypoSize}>
                                     <b>D.O.B</b>
@@ -122,16 +126,17 @@ export default function NameCard(props) {
                                 <Typography className={classes.customTypoSize}>10/07/2000</Typography>
                             </Grid>
                         </Grid>
-                       <Grid container xs={12} spacing={16}>
-                           <Grid item xs={2}>
-                               <Typography className={classes.customTypoSize}>
-                                   <b>I LIKE</b>
-                               </Typography>
-                           </Grid>
-                           <Grid item xs={2} className={classes.detailValue}>
-                               <Typography className ={classes.customTypoSize}> Lasagna Pokemon Skyrim Purple</Typography>
-                           </Grid>
-                       </Grid>
+                        <Grid container item xs={12} spacing={16}>
+                            <Grid item xs={2}>
+                                <Typography className={classes.customTypoSize}>
+                                    <b>I LIKE</b>
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={2} className={classes.detailValue}>
+                                <Typography className={classes.customTypoSize}> Lasagna Pokemon Skyrim
+                                    Purple</Typography>
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
             </CardContent>

@@ -17,7 +17,7 @@ const palette = {
 
 const themeName = "Jazzberry";
 
-const theme = createMuiTheme({palette, themeName});
+export const theme = createMuiTheme({palette, themeName});
 
 function withRoot(Component) {
     function WithRoot(props) {
@@ -31,5 +31,6 @@ function withRoot(Component) {
 
     return WithRoot;
 }
+
 
 export default withRoot;
