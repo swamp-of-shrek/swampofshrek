@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ItsThatBlackKid/3788996.github.io/precache-manifest.abf2d816bd9995c7990dd30ad4e52197.js"
+  "/3788996.github.io/precache-manifest.bedf145c07abf0d5d8452fe142797579.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/ItsThatBlackKid/3788996.github.io/index.html", {
+workbox.routing.registerNavigationRoute("/3788996.github.io/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
