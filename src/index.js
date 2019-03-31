@@ -3,8 +3,30 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {CssBaseline} from "@material-ui/core";
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import {createMuiTheme} from "@material-ui/core/styles/";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const themeName = "Jazzberry";
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {main: '#212121'},
+        secondary: {main: '#AD1457'},
+        background: {default: '#212121'},
+    },
+    typography: {
+        useNextVariants: true
+    },
+    themeName
+});
+
+ReactDOM.render(
+    <MuiThemeProvider theme={theme}>
+        <CssBaseline/>
+        <App/>
+    </MuiThemeProvider>,
+    document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -10,15 +10,30 @@ export default class SimpleAppBar extends Component {
         this.props.handleTabChange(tab)
     };
 
+    handleTitle() {
+        const {tab} = this.props;
+        switch(tab) {
+            case 0:
+                return "Personal";
+            case 1:
+                return "Interest In IT";
+            case 2:
+                return "Ideal Job";
+            default:
+                return "You should not be seeing this";
+        }
+    }
+
     render() {
+        const {tab} = this.props;
         return (
-            <AppBar position={"static"} elevation={0}>
+            <AppBar position={"fixed"} elevation={0}>
                 <Toolbar>
-                    <Typography variant="title" color={"secondary"}>Sao Sheku Kanneh</Typography>
+                    <Typography variant="h6" color={"secondary"}>{this.handleTitle()}</Typography>
                 </Toolbar>
                 <Toolbar style={{right: 0, position: 'absolute'}}>
 
-                    <SimpleTabs handleTabsChange={this.handleTabs}/>
+                    <SimpleTabs tab={tab} handleTabsChange={this.handleTabs}/>
                 </Toolbar>
             </AppBar>
         )

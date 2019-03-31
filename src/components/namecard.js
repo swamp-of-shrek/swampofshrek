@@ -9,15 +9,11 @@ import sheku_kanneh from '../static/sheku_kanneh.jpg'
 
 const style = makeStyles({
     card: {
-        width: '1000px',
+        width: '100%',
         height: '650px',
         borderRadius: 0,
-        position: 'absolute',
-        left: '0',
-        right: '0',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        zIndex: '20'
+        zIndex: '20',
+        padding: 40,
     },
     headshot: {
         width: 700,
@@ -27,7 +23,8 @@ const style = makeStyles({
     },
 
     contentMedia: {
-        display: 'flex'
+        display: 'flex',
+        padding: 20
     },
 
     info: {
@@ -45,7 +42,6 @@ const style = makeStyles({
         background: '#212121',
         position: 'absolute',
         height: 50,
-        bottom: 0,
         width: '100%'
     },
 
@@ -141,10 +137,5 @@ export default function NameCard(props) {
                 </Grid>
             </CardContent>
         </div>
-        <div className={classes.social}>
-            <IconButton></IconButton>
-        </div>
-
     </Paper>
-        ;
 }
