@@ -15,6 +15,7 @@ export default class SimpleTabs extends Component {
                 <Tab label={"Personal Information"}/>
                 <Tab label={"Interest In IT"}/>
                 <Tab label={"Ideal Job"}/>
+                <Tab label={"Profile"}/>
                 <Tab label={"Project Idea"}/>
             </Tabs>
         )

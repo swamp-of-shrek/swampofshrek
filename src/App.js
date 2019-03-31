@@ -8,6 +8,7 @@ import ItInterestPage from "./pages/interest";
 import FloatingPaper from "./components/FloatingPaper";
 import IdealJob from "./pages/idealJob";
 import ProjectIdea from "./pages/projectIdea";
+import MyProfile from "./pages/profile";
 
 const style = {
     card: {
@@ -52,7 +53,8 @@ class App extends Component {
                         {tabs === 0 && <NameCard/>}
                         {tabs === 1 && <ItInterestPage/>}
                         {tabs === 2 && <IdealJob/>}
-                        {tabs === 3 && <ProjectIdea/>}
+                        {tabs === 3 && <MyProfile/>}
+                        {tabs === 4 && <ProjectIdea/>}
                     </div>
                 </div>
             </Fragment>

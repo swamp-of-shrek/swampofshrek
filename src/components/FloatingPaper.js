@@ -10,6 +10,7 @@ const style = makeStyles({
         marginTop: 20,
         zIndex: '20',
         padding: 40,
+        textAlign: "justify"
     },
 });
 
