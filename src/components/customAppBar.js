@@ -19,6 +19,9 @@ export default class SimpleAppBar extends Component {
                 return "Interest In IT";
             case 2:
                 return "Ideal Job";
+            case 3:
+                return "Profile";
+            case 4: return "Project Idea";
             default:
                 return "You should not be seeing this";
         }
