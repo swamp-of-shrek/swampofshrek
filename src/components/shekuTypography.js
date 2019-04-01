@@ -6,11 +6,8 @@ const ShekuTypography = (props) => {
     const name = props.name;
     return (
         <Fragment>
-            <Typography style={{display: 'inline'}} color={"primary"} variant={"h3"}>
-                I'm&nbsp;
-            </Typography>
-            <Typography style={{display: 'inline'}} color={"textPrimary"} variant={"h3"}>
-                {name}
+            <Typography style={{display: 'inline', textAlign: 'justify'}} color={"textPrimary"} variant={"h3"}>
+                I'm {name}
             </Typography>
         </Fragment>
     )

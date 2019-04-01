@@ -5,7 +5,6 @@ import {withStyles} from "@material-ui/styles";
 import NameCard from "./components/namecard";
 import PropTypes from 'prop-types'
 import ItInterestPage from "./pages/interest";
-import FloatingPaper from "./components/FloatingPaper";
 import IdealJob from "./pages/idealJob";
 import ProjectIdea from "./pages/projectIdea";
 import MyProfile from "./pages/profile";
@@ -26,8 +25,9 @@ const style = {
     },
 
     bg1: {
-        backgroundColor: '#212121',
-        height: '50vh',
+        // backgroundColor: '#212121',
+        backgroundImage: 'linear-gradient(to top, #2F4858, #304A6C, #47487B, #6B3F7F, #902E72)',
+        height: '60vh',
         width: '100%'
     },
 }

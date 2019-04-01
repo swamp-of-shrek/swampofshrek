@@ -1,20 +1,7 @@
 import React, {Fragment} from 'react';
-import {makeStyles} from "@material-ui/styles";
 import Typography from "@material-ui/core/Typography";
 import FloatingPaper from "../components/FloatingPaper";
 
-const style  = makeStyles({
-    bg1: {
-        backgroundColor: '#212121',
-        height: '40vh',
-        width: '100%',
-        flex: '0 1 auto',
-    },
-
-    typoSize: {
-        color: 'white'
-    }
-});
 
 export default function ItInterestPage(props) {
     return(

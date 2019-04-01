@@ -11,7 +11,7 @@ export default class SimpleTabs extends Component {
     render() {
         const {tab} = this.props;
         return (
-            <Tabs value={tab} onChange={this.handleChange}>
+            <Tabs textColor={"primary"} value={tab} onChange={this.handleChange}>
                 <Tab label={"Personal Information"}/>
                 <Tab label={"Interest In IT"}/>
                 <Tab label={"Ideal Job"}/>

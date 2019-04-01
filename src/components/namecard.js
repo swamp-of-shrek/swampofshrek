@@ -1,48 +1,43 @@
 import React from "react";
 import CardMedia from "@material-ui/core/CardMedia";
-import {CardContent, IconButton, Paper, Typography} from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
+import {Typography} from "@material-ui/core";
 import ShekuTypography from "./shekuTypography";
 import {makeStyles} from "@material-ui/styles";
 import sheku_kanneh from '../static/sheku_kanneh.jpg'
+import FloatingPaper from "./FloatingPaper";
 
 
 const style = makeStyles({
-    card: {
-        width: '100%',
-        height: '650px',
-        borderRadius: 0,
-        zIndex: '20',
-        padding: 40,
-    },
     headshot: {
-        width: 700,
-        height: 420,
-        padding: 40,
-        border: '40px white solid'
+        width: 250,
+        height: 280,
+        padding: '1%',
+        marginBottom: '5%'
     },
 
     contentMedia: {
         display: 'flex',
-        padding: 20
     },
 
     info: {
-        paddingLeft: 10,
-        display: 'block',
+        display: 'flex',
+        flexDirection: 'column',
+        marginLeft: '10%'
     },
 
     customTypoSize: {
         fontSize: '23px',
-        marginBottom: 25
+        marginBottom: '.9%'
     },
 
     social: {
         display: 'flex',
         background: '#212121',
-        position: 'absolute',
+        marginLeft: -40,
+        marginRight: -40,
+        marginBottom: -40,
         height: 50,
-        width: '100%'
+        width: 'calc(100% + 80px)'
     },
 
     profileDetails: {
@@ -52,90 +47,83 @@ const style = makeStyles({
 
     detailValue: {
         marginLeft: 80,
-    }
+    },
+
+    nameDiv: {}
 });
 
 export default function NameCard(props) {
     const classes = style();
-    return <Paper className={classes.card}>
+    return <FloatingPaper>
         <div className={classes.contentMedia}>
             <CardMedia image={sheku_kanneh} className={classes.headshot}
                        title={"Sao Sheku Kanneh"}/>
-            <CardContent>
-                <Grid container className={classes.info}>
-                    <Grid style={{width: '89%'}} item>
-                        <ShekuTypography name={"Sao Sheku Kanneh"}/>
-                        <Typography variant={"h6"} color={"secondary"}>
-                            Student
+            <div className={classes.info}>
+                <div className={classes.nameDiv}>
+                    <ShekuTypography name={"Sao Sheku Kanneh"}/>
+                    <Typography variant={"h6"} color={"secondary"}>
+                        Student
+                    </Typography>
+                    <hr width="100%"/>
+                </div>
+                <div style={{display: 'flex'}}>
+                    <div style={{display: 'block'}}>
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            <b>AGE</b>
                         </Typography>
-                        <hr/>
-                    </Grid>
-                    <Grid className={classes.profileDetails} style={{width: '89%'}} item container>
-                        <Grid container item xs={12}>
-                            <Grid item xs={2}>
-                                <Typography className={classes.customTypoSize}>
-                                    <b>AGE</b>
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={2} className={classes.detailValue}>
-                                <Typography className={classes.customTypoSize}>18</Typography>
-                            </Grid>
-                            <Grid/>
-                        </Grid>
-                        <Grid container item xs={12}>
-                            <Grid item xs={2}>
-                                <Typography className={classes.customTypoSize}>
-                                    <b>ID</b>
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={2} className={classes.detailValue}>
-                                <Typography className={classes.customTypoSize}>3788996</Typography>
-                            </Grid>
-                        </Grid>
-                        <Grid container item xs={12}>
-                            <Grid item xs={2}>
-                                <Typography className={classes.customTypoSize}>
-                                    <b>E-MAIL</b>
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={2} className={classes.detailValue}>
-                                <Typography className={classes.customTypoSize}>s3788996@student.rmit.edu.au</Typography>
-                            </Grid>
-                        </Grid>
-                        <Grid container item xs={12} spacing={16}>
-                            <Grid item xs={2}>
-                                <Typography className={classes.customTypoSize}>
-                                    <b>NATIONALITY</b>
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={2} className={classes.detailValue}>
-                                <Typography className={classes.customTypoSize}>Liberian</Typography>
-                            </Grid>
-                        </Grid>
-                        <Grid container item xs={12} spacing={16}>
-                            <Grid item xs={2}>
-                                <Typography className={classes.customTypoSize}>
-                                    <b>D.O.B</b>
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={2} className={classes.detailValue}>
-                                <Typography className={classes.customTypoSize}>10/07/2000</Typography>
-                            </Grid>
-                        </Grid>
-                        <Grid container item xs={12} spacing={16}>
-                            <Grid item xs={2}>
-                                <Typography className={classes.customTypoSize}>
-                                    <b>I LIKE</b>
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={2} className={classes.detailValue}>
-                                <Typography className={classes.customTypoSize}> Lasagna Pokemon Skyrim
-                                    Purple</Typography>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </CardContent>
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            <b>ID</b>
+                        </Typography>
+
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            <b>E-MAIL</b>
+                        </Typography>
+
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            <b>NATIONALITY</b>
+                        </Typography>
+
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            <b>D.O.B</b>
+                        </Typography>
+
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            <b>I LIKE</b>
+                        </Typography>
+                    </div>
+
+                    <div style={{display: 'block', marginLeft: '2%'}}>
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            18
+                        </Typography>
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            3788996
+                        </Typography>
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            s3788996@student.rmit.edu.au
+                        </Typography>
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            Liberian
+                        </Typography>
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            10/07/2000
+                        </Typography>
+                        <Typography className={classes.customTypoSize} variant={"subtitle1"}>
+                            Pokemon
+                            <br/>
+                            Skyrim
+                            <br/>
+                            Super Smash <br/>
+                            Lasagna <br/>
+                        </Typography>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-    </Paper>
+        <div className={classes.social}>
+
+        </div>
+    </FloatingPaper>
 }

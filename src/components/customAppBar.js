@@ -30,9 +30,9 @@ export default class SimpleAppBar extends Component {
     render() {
         const {tab} = this.props;
         return (
-            <AppBar position={"fixed"} elevation={0}>
+            <AppBar position={"fixed"} style = {{background: 'transparent'}} elevation={0}>
                 <Toolbar>
-                    <Typography variant="h6" color={"secondary"}>{this.handleTitle()}</Typography>
+                    <Typography variant="h6" color={"primary"}>{this.handleTitle()}</Typography>
                 </Toolbar>
                 <Toolbar style={{right: 0, position: 'absolute'}}>
 

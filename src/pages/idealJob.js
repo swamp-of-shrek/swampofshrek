@@ -1,8 +1,7 @@
 import React from "react"
 import FloatingPaper from "../components/FloatingPaper";
-import {CardMedia, Typography} from "@material-ui/core";
+import {Typography} from "@material-ui/core";
 import ideal_job from "../static/ideal_job.png";
-import {makeStyles} from "@material-ui/styles";
 
 
 export default function IdealJob() {
