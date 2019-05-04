@@ -163,7 +163,7 @@ export default function MyProfile() {
                     ID: s3685018
                 </Typography>
                 <Typography variant={"subtitle1"} style={{marginTop: 10}}>
-                    Email Address: s365018@student.rmi.edu.au
+                    Email Address: s365018@student.rmit.edu.au
                 </Typography>
                 <Typography variant={"subtitle1"} style={{marginTop: 10}}>
                     Nationality: Malaysian
