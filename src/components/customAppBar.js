@@ -14,16 +14,7 @@ export default class SimpleAppBar extends Component {
         const {tab} = this.props;
         switch(tab) {
             case 0:
-                return "Personal";
-            case 1:
-                return "Interest In IT";
-            case 2:
-                return "Ideal Job";
-            case 3:
-                return "Profile";
-            case 4: return "Project Idea";
-            default:
-                return "You should not be seeing this";
+                return "Team Profile";
         }
     }
 
@@ -32,11 +23,7 @@ export default class SimpleAppBar extends Component {
         return (
             <AppBar position={"fixed"} style = {{background: 'transparent'}} elevation={0}>
                 <Toolbar>
-                    <Typography variant="h6" color={"primary"}>{this.handleTitle()}</Typography>
-                </Toolbar>
-                <Toolbar style={{right: 0, position: 'absolute'}}>
-
-                    <SimpleTabs tab={tab} handleTabsChange={this.handleTabs}/>
+                    <Typography variant="h6" style={{color: 'white'}} >{this.handleTitle()}</Typography>
                 </Toolbar>
             </AppBar>
         )

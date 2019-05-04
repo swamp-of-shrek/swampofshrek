@@ -2,11 +2,7 @@ import React, {Component, Fragment} from 'react';
 import './App.css';
 import SimpleAppBar from "./components/customAppBar";
 import {withStyles} from "@material-ui/styles";
-import NameCard from "./components/namecard";
 import PropTypes from 'prop-types'
-import ItInterestPage from "./pages/interest";
-import IdealJob from "./pages/idealJob";
-import ProjectIdea from "./pages/projectIdea";
 import MyProfile from "./pages/profile";
 
 const style = {
@@ -50,11 +46,7 @@ class App extends Component {
                 <SimpleAppBar tab={tabs} handleTabChange={this.handleTabsChange}/>
                 <div className={classes.bg1}>
                     <div className={classes.card}>
-                        {tabs === 0 && <NameCard/>}
-                        {tabs === 1 && <ItInterestPage/>}
-                        {tabs === 2 && <IdealJob/>}
-                        {tabs === 3 && <MyProfile/>}
-                        {tabs === 4 && <ProjectIdea/>}
+                          <MyProfile/>
                     </div>
                 </div>
             </Fragment>

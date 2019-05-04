@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Fragment} from "react"
 import FloatingPaper from "../components/FloatingPaper";
 import {Typography} from "@material-ui/core";
 import myerbriggs from "../static/myerbriggs.png";
@@ -7,61 +7,199 @@ import polComp from "../static/polComp.png";
 
 export default function MyProfile() {
     return (
-        <FloatingPaper>
-            <Typography variant={"h4"}>
-                Personal Profile
-            </Typography>
-            <hr/>
+        <Fragment>
+            <FloatingPaper>
+                <Typography variant={"h4"}>
+                    <b>Peng Cheng Lin</b>
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    ID: s3664976
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Email Address: s3664976@student.rmit.edu.au
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Nationality: China
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Culture: Chinese Civilisation
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Education: Senior High School
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Languages: Chinese
+                </Typography>
 
-            <Typography variant={"h5"}>
-                <b>Myers Briggs Test</b>
-            </Typography>
-            <img src={myerbriggs} width={700} height={500} alt={"Myers Briggs"}/>
-            <br/>
+                <br/>
+                <Typography variant={"h5"}>
+                    DEFENDER PERSONALITY (ISFJ, -A/-T)
+                </Typography>
+                <Typography variant={"body1"}>
+                    This personality type is a universal helper, sharing their knowledge,
+                    experience, time and energy with anyone in need, especially with friends and family.
+                    Also, they are meticulous, cautious, take a stable approach and make appropriate concessions
+                    according to
+                    the needs of the situation to achieve their ultimate goal.
+                    Moreover, Defenders not only ensure that things are done to the highest standards but often far
+                    beyond them.
+                    Besides, defenders are very imaginative, they use this quality as an aid to empathy,
+                    observe other people's emotional states and see things from their perspective.
+                </Typography>
+            </FloatingPaper>
 
-            <Typography variant={"h5"}>
-                <b>Learning Style Test</b>
-            </Typography>
-            <img src={learnStyle} width={700} height={500} alt={"Myers Briggs"}/>
-            <br/>
+            <FloatingPaper>
+                <Typography variant={"h4"}>
+                    <b>Nandini Nair</b>
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    ID: S3784955
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Email Address: s3784955@student.rmit.edu.au
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Nationality: Ethnically India, but actually from Singapore
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Education to date: RMIT University (Bach of IT)
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Languages Spoken: French, English, Hindi, Malayalam
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Passionate about: Digital art
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Interesting Fact: Whilst writing this website,
+                    I would be watching to or listening Hamilton The Musical for inspiration to do it well.
+                </Typography>
 
-            <Typography variant={"h5"}>
-                <b>Learning Compass</b>
-            </Typography>
-            <img src={polComp} width={700} height={500} alt={"Myers Briggs"}/>
-            <br/>
-            <Typography variant={"subtitle1"}>
-                The results of these tests do not mean much to me.
-                Other than the Myers Briggs test, I see little value in these results,
-                though it was interesting for me to read that I am an auditory learner and a left leaning Libertarian.
-                I've always thought of myself as a Libertarian - I'm supportive of the rights of all people and
-                believe our independence and individuality should not be legislated away by the government -
-                but I always figured my ideologies were more right of centre than left.
-                In regards to the learning style, I have nothing to say other than this is wrong.
-                I know I learn better when I am practicing what is being taught rather than hearing it.
-                This is a fact that I've told by my teachers in the past and I demonstrate when learning a new language,
-                topic in maths, and even in writing.. I develop skills faster when I practice them.
-                Also, regarding the Myers Briggs test - I don't think I am as emotional as it makes me seem.
-                I spend time contemplating every decision before I make it (sometimes).
-            </Typography>
-            <br/>
-            <Typography variant={"subtitle1"}>
-                I believe me being introverted may prove difficult for teammates as I tend to become reclusive
-                and fail to communicate effectively when put under immense social pressure. Despite this,
-                I think if they Myers Briggs test is correct I'll have no trouble contributing ideas to the team that
-                I think yield the highest probability for success.
-                <em>If</em> the learning style result is correct, I'll have no trouble listening to my teammates and
-                making decisions based on the things they've told me.
-                As for the learning compass, I don't think political ideologies are important in group work.
-                We should all be able to put aside our differences and work as a unit to produce the best possible
-                results we can.
-            </Typography>
-            <br/>
-            <Typography variant={"subtitle1"}>
-                I think in choosing a team, I should find people who I know I can get along well with and I can
-                be the most productive around. I don't believe the results of an online test should have any impact
-                on a team's ability to succeed.
-            </Typography>
-        </FloatingPaper>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Honest Confession: I don't rightly know why I made a whole extra page for just this?
+                    It seems like a waste of time?
+                </Typography>
+
+                <br/>
+                <Typography variant={"h5"}>
+                    LOGICIAN PERSONALITY (INTP)
+                </Typography>
+                <Typography variant={"body1"}>
+                    INTPs are detached, analytical observers who can seem oblivious to the world around them
+                    because they are so deeply absorbed in thought. They spend much of their time focused internally:
+                    exploring concepts, making connections, and seeking understanding.
+                    To the Architect, life is an ongoing inquiry into the mysteries of the universe.
+                </Typography>
+            </FloatingPaper>
+
+            <FloatingPaper>
+                <Typography variant={"h4"}>
+                    <b>Adam Burcher</b>
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    ID: s3769238
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Email Address: burchera@gmail.com
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Nationality: Australian
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Current Education: BA of Information Technology
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    League of Legends Match History: <a
+                    href={"https://oce.op.gg/summoner/userName=Going%20for%20Silver"}>Here</a>
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Honest Confession: I don't rightly know why I made a whole extra page for just this? It seems like a
+                    waste of time
+                </Typography>
+
+                <br/>
+                <Typography variant={"h5"}>
+                    INFJ
+                </Typography>
+                <Typography variant={"body1"}>
+                    The Advocate personality type is very rare, making up less than one percent of the population, but
+                    they nonetheless leave their mark on the world. Advocates have an inborn sense of idealism and
+                    morality, but what sets them apart is that they are not idle dreamers, but people capable of taking
+                    concrete steps to realize their goals and make a lasting positive impact. They tend to see helping
+                    others as their purpose in life, but while people with this personality type can be found engaging
+                    rescue efforts and doing charity work, their real passion is to get to the heart of the issue so
+                    that people need not be rescued at all.
+                </Typography>
+            </FloatingPaper>
+
+            <FloatingPaper>
+                <Typography variant={"h4"}>
+                    <b>Lai Mun Zhuo</b>
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    ID: s3685018
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Email Address: s365018@student.rmi.edu.au
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Nationality: Malaysian
+                </Typography>
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Languages Spoken: Mandarin, Cantonese, English and a little bit of Malay
+                </Typography>
+
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Education: Deakin College (Diploma of Engineering) RMIT (Bach of IT)
+                </Typography>
+
+                <Typography variant={"subtitle1"} style={{marginTop: 10}}>
+                    Fact: I AM ALWAYS HUNGRY
+                </Typography>
+
+
+                <br/>
+                <Typography variant={"h5"}>
+                    INFP
+                </Typography>
+                <Typography variant={"body1"}>
+                    Mediator personalities are true idealists, always looking for the hint of good in even the worst of
+                    people and events, searching for ways to make things better. While they may be perceived as calm,
+                    reserved, or even shy, Mediators have an inner flame and passion that can truly shine. Comprising
+                    just 4% of the population, the risk of feeling misunderstood is unfortunately high for the Mediator
+                    personality type – but when they find like-minded people to spend their time with, the harmony they
+                    feel will be a fountain of joy and inspiration.
+                </Typography>
+            </FloatingPaper>
+
+            <FloatingPaper>
+                <Typography variant={"h6"}>
+                    Ideal Jobs
+                </Typography>
+                <Typography variant={"body"}>
+                    Everyone’s ideal jobs are very similar in field, as well as interest. Adam and Sao are interested in
+                    every type of programming, while Lai, Peng, and Nandini are leaning towards the development of video
+                    games. However, some of us prefer to participate in teams, while others prefer to do solo careers;
+                    either way, everyone is flexible, especially when it came to group work for an assignment.
+                </Typography>
+            </FloatingPaper>
+            <FloatingPaper>
+                <Typography variant={"h6"}>
+                    Personalities
+                </Typography>
+                <Typography variant={"body"}>
+                    It was fairly easy to communicate and give tasks to each person, since we all shared similar
+                    personalities and could understand each other. Even though we are all introverts, communication is
+                    our strong point. Since Peng is an ISFJ, he had gotten the task to conduct the interview; he was
+                    able to easily understand the other person’s point of view, and summarize it all into words. The
+                    leader of the group is the INTP, due to her logical thought process -- she was easily able to give
+                    tasks to everyone and took initiative to discuss ideas. There were two people with the same
+                    personalities within our group, but they are passionate about separate things: Sao is a decent
+                    programmer, therefore he was given the task to design our group website, while Lai was given the
+                    task to do research about industry data.
+
+                </Typography>
+            </FloatingPaper>
+        </Fragment>
     )
 }
